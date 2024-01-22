@@ -8,6 +8,8 @@ public class App {
         Date currentDate = new Date();
         SimpleDateFormat sdf = new SimpleDateFormat();
 
+        sdf.applyPattern("yyyy");
+        JOptionPane.showMessageDialog(new JDialog(), sdf.format(currentDate), "Year", JOptionPane.INFORMATION_MESSAGE);
     }
     
 }
